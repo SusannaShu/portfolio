@@ -7,7 +7,7 @@ class Parall extends React.Component{
         const p=this.props
         const image=p.image
         const content=p.content
-        const imgcontent=p.imgcontent
+        // const imgcontent=p.imgcontent
         // const high=p.height
         const strength=p.strength
         const styl=p.styl
