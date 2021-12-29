@@ -61,6 +61,13 @@ class TheirStoriesPage extends Raect.Component{
                     <Icon name='arrow right' size='huge' inverted style={{position:'absolute', top:1390, left:1050, color:'white'}} />
                     </a>
 
+                    <ParallaxStories strength={200}  image={'https://s2.loli.net/2021/12/30/jir3w8lLSuNc64y.png'}/>
+                    <Header  style={{fontSize:50,color:'white', position:'absolute', top:1660,left:150}}>
+                        More incoming stories...
+                    </Header>
+                    {/* <Icon name='arrow right' size='huge' inverted style={{position:'absolute', top:1390, left:1050, color:'white'}} /> */}
+                    
+
 
                     
                     
