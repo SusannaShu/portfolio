@@ -1,5 +1,5 @@
 import React from 'react'
-import BackgroundImage from '../BackgroundImg'
+// import BackgroundImage from '../BackgroundImg'
 import ImageGallery2 from './ImageGallery2'
 
 class Project2 extends React.Component{

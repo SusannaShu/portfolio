@@ -1,7 +1,7 @@
 import React from 'react'
-import BackgroundImg from'../BackgroundImg'
+// import BackgroundImg from'../BackgroundImg'
 import Parallax from '../Parallax'
-import Hi from './Hi'
+// import Hi from './Hi'
 import HomeMenu from './HomeMenu'
 
 class HomePage extends React.Component{

@@ -1,6 +1,6 @@
 import React from 'react'
 import BackgroundImage from '../BackgroundImg'
-import {Header, Container} from 'semantic-ui-react'
+import {Header} from 'semantic-ui-react'
 
 
 class ParallaxContent extends React.Component{

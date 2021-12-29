@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Menu, Segment} from 'semantic-ui-react'
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+  // BrowserRouter as Router,
+  // Switch,
+  // Route,
   Link
 } from "react-router-dom";
 

@@ -10,7 +10,7 @@ import {
 
 import HomePage from './component/homePage/HomePage';
 import MyArtPage from './component/myArtPage/MyArtPage'
-import ClothesSharingPage from './component/clothesSharingPage/clothesSharingPage'
+// import ClothesSharingPage from './component/clothesSharingPage/clothesSharingPage'
 import FashionShowPage from './component/fashionShowPage/FashionShowPage'
 
 
@@ -19,7 +19,7 @@ import Project2 from './component/myArtPage/Project2'
 import Project3 from './component/myArtPage/Project3'
 import Project4 from './component/myArtPage/Project4'
 
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 
 import BehindClothes from './component/fashionShowPage/BehindClothesPage'
 import TheirStories from './component/fashionShowPage/TheirStoriesPage'

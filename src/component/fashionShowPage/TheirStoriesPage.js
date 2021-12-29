@@ -1,5 +1,5 @@
 import Raect from 'react'
-import {  Container,Header,Icon} from 'semantic-ui-react';
+import { Header,Icon} from 'semantic-ui-react';
 
 import ParallaxStories from './ParallaxStories'
 import Parallax from '../Parallax'

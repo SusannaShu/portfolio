@@ -1,10 +1,10 @@
 import React from 'react'
-import BackgroundImage from '../BackgroundImg'
+// import BackgroundImage from '../BackgroundImg'
 import {Header, Icon} from 'semantic-ui-react'
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
+    // BrowserRouter as Router,
+    // Switch,
+    // Route,
     Link
   } from "react-router-dom";
   

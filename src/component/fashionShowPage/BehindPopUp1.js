@@ -1,11 +1,11 @@
 import Raect from 'react'
-import { Popup, Container, Header} from 'semantic-ui-react';
+import { Popup, Header} from 'semantic-ui-react';
 import BackgroundImage from '../BackgroundImg'
-import FashionMenu from './ShowMenu'
-import Parallax from './BehindParallax'
-import BehindPContent from './BehindPContent'
-import BehindClothesText1 from './BehindClothesText1';
-import ParallaxFree1 from './ParallaxFree1'
+// import FashionMenu from './ShowMenu'
+// import Parallax from './BehindParallax'
+// import BehindPContent from './BehindPContent'
+// import BehindClothesText1 from './BehindClothesText1';
+// import ParallaxFree1 from './ParallaxFree1'
 
 
 class BehindClothesPage extends Raect.Component{

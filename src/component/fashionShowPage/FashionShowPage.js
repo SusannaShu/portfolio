@@ -1,12 +1,12 @@
 import React from 'react'
 import FashionMenu from './ShowMenu'
-import BackgroundImage from '../BackgroundImg'
+// import BackgroundImage from '../BackgroundImg'
 import Video from './Video'
 import Parallax from '../Parallax'
 import ParallaxContent from './ParallaxContent'
-import {Header, Container, Icon} from 'semantic-ui-react'
+import {Container} from 'semantic-ui-react'
 import LinkContent from './LinkContent'
-import BehindParallax from'./BehindParallax'
+// import BehindParallax from'./BehindParallax'
 
 class FashionShowPage extends React.Component{
     render(){

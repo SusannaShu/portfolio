@@ -1,14 +1,14 @@
 import React from 'react'
-import { Parallax, Container, } from 'react-parallax';
-import {Header} from 'semantic-ui-react'
+import { Parallax } from 'react-parallax';
+// import {Header} from 'semantic-ui-react'
 
  
 class Parall extends React.Component{
     render(){
         const p=this.props
         const image=p.image
-        const content=p.content
-        const background=p.background
+        // const content=p.content
+        // const background=p.background
         const strength=p.strength
         const styl=p.styl
 

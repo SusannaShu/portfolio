@@ -1,12 +1,12 @@
 import React from 'react'
-import BackgroundImage from '../BackgroundImg'
-import {Header, Container, Icon} from 'semantic-ui-react'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+// import BackgroundImage from '../BackgroundImg'
+import {Header} from 'semantic-ui-react'
+// import {
+//     BrowserRouter as Router,
+//     Switch,
+//     Route,
+//     Link
+//   } from "react-router-dom";
 
 
 class ParallaxContent extends React.Component{

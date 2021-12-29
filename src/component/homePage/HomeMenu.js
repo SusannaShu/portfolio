@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
-import { Grid, Menu, Segment, Header, } from 'semantic-ui-react'
+import { Grid, Menu, Header, } from 'semantic-ui-react'
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+  // BrowserRouter as Router,
+  // Switch,
+  // Route,
   Link
 } from "react-router-dom";
 
-import HomePage from '../homePage/HomePage';
-import MyArtPage from '../myArtPage/MyArtPage'
-import ClothesSharingPage from '../clothesSharingPage/clothesSharingPage'
-import FashionShowPage from '../fashionShowPage/FashionShowPage'
+// import HomePage from '../homePage/HomePage';
+// import MyArtPage from '../myArtPage/MyArtPage'
+// import ClothesSharingPage from '../clothesSharingPage/clothesSharingPage'
+// import FashionShowPage from '../fashionShowPage/FashionShowPage'
 
 
 

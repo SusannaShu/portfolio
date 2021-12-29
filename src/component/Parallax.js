@@ -1,5 +1,5 @@
 import React from 'react'
-import { Parallax, Container} from 'react-parallax';
+import { Parallax} from 'react-parallax';
 
  
 class Parall extends React.Component{
@@ -8,7 +8,7 @@ class Parall extends React.Component{
         const image=p.image
         const content=p.content
         const imgcontent=p.imgcontent
-        const high=p.height
+        // const high=p.height
         const strength=p.strength
         const styl=p.styl
 
@@ -20,7 +20,7 @@ class Parall extends React.Component{
             
             <div >
                 {content}
-                <img src={imgcontent}/>
+                <img alt='...'src={imgcontent}/>
             </div>
             
 
