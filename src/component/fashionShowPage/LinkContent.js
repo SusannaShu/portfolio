@@ -8,7 +8,7 @@ import {
     Link
   } from "react-router-dom";
 //   import ParallaxFree1 from './ParallaxFree1'
-
+import Foot from '../Foot';
 
 class ParallaxContent extends React.Component{
     render(){
@@ -16,7 +16,7 @@ class ParallaxContent extends React.Component{
             
            
             
-            <div style={{position:'absolute', top:1600, opacity:0.5}}>
+            <div style={{position:'absolute', top:1600, opacity:0.2}}>
                 <BackgroundImage image='https://i.loli.net/2020/11/14/b6C7SRfNJ1ADEI4.jpg'/>
             </div>
 
@@ -29,7 +29,7 @@ class ParallaxContent extends React.Component{
              </div>
              </Link>
              
-            <div style={{position:'absolute', top:1860, opacity:0.5}}>
+            <div style={{position:'absolute', top:1860, opacity:0.2}}>
                 <BackgroundImage image='https://i.loli.net/2020/11/14/xFKkTGZfgIBwMrS.jpg'/>
             </div>
 
@@ -41,6 +41,8 @@ class ParallaxContent extends React.Component{
                 <Icon name='arrow right' size='huge' inverted style={{position:'absolute', top:1920, left:1050, color:'white'}} />
              </div>
              </Link>
+
+             
     </div>
     }
 }

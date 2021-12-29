@@ -7,7 +7,7 @@ import ParallaxContent from './ParallaxContent'
 import {Container} from 'semantic-ui-react'
 import LinkContent from './LinkContent'
 // import BehindParallax from'./BehindParallax'
-
+import Foot from '../Foot'
 class FashionShowPage extends React.Component{
     componentDidMount(){
         window.scrollTo(0, 0)
@@ -21,7 +21,7 @@ class FashionShowPage extends React.Component{
                 <BackgroundImage image='https://i.loli.net/2020/11/14/W6zFUXxHLRec5QV.jpg'/>
             </div> */}
 
-            <Container fluid style={{position:'absolute', top:720}}>
+            <Container fluid style={{position:'absolute', top:720, padding:80, backgroundColor:'black'}}>
              <Video/>
              </Container>
 
@@ -31,7 +31,6 @@ class FashionShowPage extends React.Component{
             </Container>
 
             <LinkContent/>
-            
             </div>
     }
 }
