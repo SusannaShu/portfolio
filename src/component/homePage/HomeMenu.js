@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Menu, Header, } from 'semantic-ui-react'
+import { Grid, Menu, Header,Segment } from 'semantic-ui-react'
 import {
   // BrowserRouter as Router,
   // Switch,
@@ -62,6 +62,8 @@ export default class HomeMenu extends Component {
               onClick={this.handleItemClick}
             />
           </Menu>
+
+        
         </Grid.Column>
       </Grid>
 
