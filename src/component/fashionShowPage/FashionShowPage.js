@@ -9,6 +9,9 @@ import LinkContent from './LinkContent'
 // import BehindParallax from'./BehindParallax'
 
 class FashionShowPage extends React.Component{
+    componentDidMount(){
+        window.scrollTo(0, 0)
+    }
     render(){
         return<div>
             <FashionMenu/>

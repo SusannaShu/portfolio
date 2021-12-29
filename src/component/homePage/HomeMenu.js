@@ -50,7 +50,7 @@ export default class HomeMenu extends Component {
               onClick={this.handleItemClick}
             />
             <Menu.Item style={{fontSize:20, fontWeight:'bold'}}
-              as={'a'} href='http://localhost:3000/'
+              as={'a'} href='https://www.sheyoufashion.com/#/'
               name='Clothes Sharing'
               active={activeItem === 'clothessharing'}
               onClick={this.handleItemClick}

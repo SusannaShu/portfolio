@@ -32,7 +32,7 @@ export default class OtherMenu extends Component {
           onClick={this.handleItemClick}
         />
         <Menu.Item
-          as={'a'} href='http://localhost:3000/'
+          as={'a'} href='https://www.sheyoufashion.com/#/'
           name='Clothes Sharing'
           active={activeItem === 'clothessharing'}
           onClick={this.handleItemClick}

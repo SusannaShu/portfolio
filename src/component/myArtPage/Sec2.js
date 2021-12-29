@@ -33,16 +33,16 @@ class Sec2 extends React.Component{
 
             <div> 
             <Link to="/myart/project2">
-            <Header style={{fontSize:70, position:'absolute', top:1086.79, left:137.5, color:'#338FCC'}}>
-            Project 2
+            <Header style={{fontSize:70, position:'absolute', top:1036.79, left:137.5, color:'#338FCC'}}>
+            Project 
             </Header>
             <br/>
-            <Header style={{fontSize:50, position:'absolute', top:1186.79, left:137.5, color:'#33AECC'}}>
+            <Header style={{fontSize:50, position:'absolute', top:1136.79, left:137.5, color:'#33AECC'}}>
             Virtual Hug
             </Header>
             <br />
             
-            <Icon name='arrow right' size='huge' inverted style={{position:'absolute', top:1308, left:138, color:'#33AECC'}} />
+            <Icon name='arrow right' size='huge' inverted style={{position:'absolute', top:1258, left:138, color:'#33AECC'}} />
             </Link>
             </div>
 

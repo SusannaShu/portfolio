@@ -32,7 +32,7 @@ class Parall extends React.Component{
                 
             
             <div >
-            <img alt='...' src={content}/>
+            
             
             </div>
             

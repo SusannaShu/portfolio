@@ -13,6 +13,9 @@ import BehindClothesText2 from './BehindClothesText2'
 
 
 class BehindClothesPage extends Raect.Component{
+    componentDidMount(){
+        window.scrollTo(0, 0)
+    }
     render(){
         return<div>
             <FashionMenu/>
