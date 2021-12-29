@@ -56,17 +56,17 @@ class Sec1 extends React.Component{
             
              <div>
              <Link to="/myart/project1">
-             <Header style={{fontSize:70, position:'absolute', top:400, left:980, color:'white'}}>
+             <Header style={{fontSize:70, position:'absolute', top:400, left:930, color:'white'}}>
              Project 
              </Header>
              <br/>
-             <Header style={{fontSize:50, position:'absolute', top:500, left:980, color:'white'}}>
+             <Header style={{fontSize:50, position:'absolute', top:500, left:930, color:'white'}}>
              WOMEN 2020
              </Header>
              <br />
              
 
-             <Icon name='arrow right' size='huge' inverted style={{position:'absolute', top:600, left:980, color:'white'}} />
+             <Icon name='arrow right' size='huge' inverted style={{position:'absolute', top:600, left:930, color:'white'}} />
 
              </Link>
              </div>
