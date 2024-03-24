@@ -45,7 +45,7 @@ export default class HomeMenu extends Component {
             />
             <Menu.Item style={{fontSize:20, fontWeight:'bold'}}
               as={Link} to='/myart'
-              name='My Art'
+              name='Arts'
               active={activeItem === 'myart'}
               onClick={this.handleItemClick}
             />

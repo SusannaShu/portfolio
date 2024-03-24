@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 
+import PaintingPage from './component/paintingPage/PaintingPage'
 
 import HomePage from './component/homePage/HomePage';
 import MyArtPage from './component/myArtPage/MyArtPage'
@@ -46,6 +47,10 @@ class App extends React.Component{
             </Route> */}
             <Route exact path="/fashionshow">
               <FashionShowPage/>
+            </Route>
+
+            <Route exact path="/paintings">
+              <PaintingPage/>
             </Route>
 
           </Switch>

@@ -31,7 +31,6 @@ class Parall extends React.Component{
                 
             
             <div >
-            <img src={content} alt='...'/>
             
             </div>
             

@@ -27,7 +27,7 @@ export default class OtherMenu extends Component {
           />
           <Menu.Item
             as={Link} to='/myart'
-            name='My Art'
+            name='Arts'
             active={activeItem === 'myart'}
             onClick={this.handleItemClick}
           />

@@ -17,13 +17,7 @@ class Sec3 extends React.Component{
             {/* project 3 */}
 
             <ParallaxFree3 strength="200" image='https://i.loli.net/2020/11/21/pQzqFBVU8K1Pw7o.png'/>
-            {/* <div style={{position:'absolute',top:1356}}>
-                <BackgroundImage image='https://i.loli.net/2020/11/11/yR9vo1Zw6QXsHqu.jpg'/>
-            </div>
-
-            <div style={{position:'absolute',top:2199}}>
-                <BackgroundImage image='https://i.loli.net/2020/11/11/4kxJaiwPH9Eevjg.jpg'/>
-            </div> */}
+           
 
             <div>
             <Link to="/myart/project3">
