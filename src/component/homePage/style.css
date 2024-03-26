@@ -220,6 +220,7 @@ body {
   width: 100vw;
   height: 400vh;
   position: relative;
+  
 }
 .grid {
   top: 0;
@@ -229,12 +230,18 @@ body {
   height: 60vw;
   margin: 0 calc(100vw / 20 * 3);
   position: absolute;
+  background-image: radial-gradient(
+    circle,
+    rgb(255,23,136), 
+    transparent
+  );
 }
 @media only screen and (max-width: 580px) {
   .grid {
     margin: 0;
     width: 100vw;
     height: 89.444vw;
+    
   }
 }
 .gridBlock {
@@ -374,10 +381,10 @@ body {
   }
 }
 .gridLayer:nth-child(9) .gridBlock {
-  bottom: 0;
+  bottom: -5vw;
   left: 50vw;
-  width: 10vw;
-  height: 10vw;
+  width: 15vw;
+  height: 15vw;
 }
 @media only screen and (max-width: 580px) {
   .gridLayer:nth-child(9) .gridBlock {
@@ -396,8 +403,23 @@ body {
   background: linear-gradient(to bottom, pink, white);
   color: rgb(255,23,136);
   display: flex;
-  font-size: 20vh;
+  font-size: 12vh;
   justify-content: center;
   align-items: center;
   
 }
+
+.content-section{
+  color: white;
+  display: flex;
+  font-size: 8vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  position: absolute;
+  width: 50vw;
+  z-index: 2;
+  left: 30vw;
+  top:10vw
+}
+

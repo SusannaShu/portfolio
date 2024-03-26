@@ -158,14 +158,14 @@ class HomePage extends React.Component {
             style={{height:'20vh', background: 'linear-gradient(to bottom, pink, white)' }}
           ></div> */}
 
-          <p class='header-section'>
-            Welcome to my world
-          </p>
+          <p class='header-section'>Welcome to my world</p>
 
           <div className='grid-container'>
+            <p class='content-section'>
+              I like combining Art, Fashion, and Technology
+            </p>
             <div className='grid'>{this.renderGridBlocks()}</div>
           </div>
-          
         </body>
       </div>
     )
