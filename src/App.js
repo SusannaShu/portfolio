@@ -7,18 +7,9 @@ import {
   Route
 } from "react-router-dom";
 
-import PaintingPage from './component/paintingPage/PaintingPage'
-
 import HomePage from './component/homePage/HomePage';
-import MyArtPage from './component/myArtPage/MyArtPage'
 // import ClothesSharingPage from './component/clothesSharingPage/clothesSharingPage'
 import FashionShowPage from './component/fashionShowPage/FashionShowPage'
-
-
-import Project1 from './component/myArtPage/Project1'
-import Project2 from './component/myArtPage/Project2'
-import Project3 from './component/myArtPage/Project3'
-import Project4 from './component/myArtPage/Project4'
 
 // import ReactDOM from "react-dom";
 
@@ -39,43 +30,13 @@ class App extends React.Component{
             <Route exact path="/">
               <HomePage/>
             </Route>
-            <Route exact path="/myart">
-              <MyArtPage/>
-            </Route>
-            {/* <Route exact path="/clothessharing">
-              <ClothesSharingPage/>
-            </Route> */}
+         
             <Route exact path="/fashionshow">
               <FashionShowPage/>
             </Route>
 
-            <Route exact path="/paintings">
-              <PaintingPage/>
-            </Route>
-
           </Switch>
 
-          <Switch>
-{/* 
-          <Route exact path="/myart">
-            <MyArtPage />
-          </Route> */}
-
-          <Route exact path="/myart/project1">
-            <Project1 />
-          </Route>
-
-          <Route exact path="/myart/project2">
-            <Project2 />
-          </Route>
-          <Route exact path="/myart/project3">
-            <Project3 />
-          </Route>
-
-          <Route exact path="/myart/project4">
-            <Project4 />
-          </Route>
-          </Switch>
 
           <Switch>
 

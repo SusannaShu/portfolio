@@ -1,0 +1,403 @@
+body {
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.color-container {
+  position: absolute;
+  z-index: 1;
+}
+
+.left-container {
+  display: flex;
+  height: 100vh;
+  width: 50vw;
+  background-color: rgba(255, 105, 180, 0.5);
+}
+
+.right-container {
+  display: flex;
+  height: 100vh;
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.background-container {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center; /* Aligns horizontally */
+  align-items: flex-end; /* Aligns vertically at the bottom */
+  background-image: url('https://res.cloudinary.com/sheyou/image/upload/v1708711855/Subject_8e78de5e06.png'); /* Your image link */
+  background-position: center bottom; /* Center the background image at the bottom */
+  background-repeat: no-repeat;
+  background-size: 60vh;
+  z-index: 2;
+}
+
+.content-container {
+  position: absolute;
+  z-index: 4;
+}
+
+.text1 {
+  left: 0;
+  display: flex;
+  height: 100vh;
+  width: 50vw;
+  color: white;
+  font-size: 6vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.text3 {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-size: 6vw;
+  z-index: 3;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* .text1:hover{
+  border-radius: 50%; 
+  text-align: center;
+  background-image: radial-gradient(
+    circle,
+    hotpink,
+    transparent
+  )
+} */
+
+.text1:hover {
+  transform: scale(1.2);
+}
+
+.text2 {
+  right: 0;
+  display: flex;
+  height: 100vh;
+  width: 50vw;
+  color: hotpink;
+  font-size: 6vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.text2:hover {
+  transform: scale(1.2);
+}
+
+/* .text2:hover{
+  border-radius: 50%;
+  text-align: center;
+  background-image: radial-gradient(
+    circle,
+    white,
+    transparent
+  )
+} */
+
+.intro-background {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://res.cloudinary.com/sheyou/image/upload/v1711312709/Untitled_Artwork_2_25314340fe.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  /* background-image: radial-gradient(
+    circle,
+    lightpink,
+    transparent
+  ); */
+}
+
+#pic1 {
+  height: 80vh;
+  bottom: 200px;
+  z-index: 2;
+}
+
+#pic2 {
+  height: 100vh;
+  position: absolute;
+  left: -20px;
+  z-index: 1;
+}
+
+#pic3 {
+  height: 40vh;
+  z-index: 1;
+  position: absolute;
+  right: 150px;
+  top: 50px;
+}
+
+#pic4 {
+  height: 75vh;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  z-index: 2;
+}
+
+#pic5 {
+  height: 40vh;
+  position: absolute;
+  right: 100px;
+  z-index: 3;
+  bottom: 50px;
+}
+
+.image-placement {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: flex-end;
+  background-color: pink;
+}
+
+.dot {
+  position: absolute;
+
+  width: 40px; /* Size of the dot */
+  height: 40px; /* Size of the dot */
+  border-radius: 50%; /* Makes it a circle */
+  background-color: #d1ffbd; /* Color of the dot, change as needed */
+  z-index: 3; /* Ensure it's on top of images but behind the intro background */
+}
+
+/* Example positions, adjust as needed */
+#dot1 {
+  top: 90%;
+  left: 50%;
+}
+#dot2 {
+  top: 30%;
+  left: 40%;
+}
+#dot3 {
+  top: 40%;
+  left: 70%;
+}
+#dot4 {
+  top: 50%;
+  left: 20%;
+}
+#dot5 {
+  top: 60%;
+  left: 60%;
+}
+#dot6 {
+  top: 70%;
+  left: 35%;
+}
+
+/*scroll to view gallery*/
+
+.gridBlock {
+  opacity: 0;
+}
+
+/* Grid almost fully pulled from https://www.rino-pelle.com/ */
+.grid-container {
+  width: 100vw;
+  height: 400vh;
+  position: relative;
+}
+.grid {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 70vw;
+  height: 60vw;
+  margin: 0 calc(100vw / 20 * 3);
+  position: absolute;
+}
+@media only screen and (max-width: 580px) {
+  .grid {
+    margin: 0;
+    width: 100vw;
+    height: 89.444vw;
+  }
+}
+.gridBlock {
+  background-size: cover;
+  /* background-color: darkgray; */
+}
+.gridLayer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  will-change: transform;
+  transform-origin: 44.951% 50%;
+}
+.gridLayer:nth-child(4) .gridBlock {
+  top: 5vw;
+  left: 20vw;
+  width: 10vw;
+  height: 10vw;
+}
+@media only screen and (max-width: 580px) {
+  .gridLayer:nth-child(4) .gridBlock {
+    top: 11.111vw;
+    left: 23.889vw;
+    width: 15vw;
+    height: 15vw;
+  }
+}
+.gridLayer:nth-child(2) .gridBlock {
+  top: 0;
+  left: 32.5vw;
+  width: 15vw;
+  height: 15vw;
+}
+@media only screen and (max-width: 580px) {
+  .gridLayer:nth-child(2) .gridBlock {
+    top: 0;
+    left: 43.333vw;
+    width: 26.389vw;
+    height: 26.389vw;
+  }
+}
+.gridLayer:nth-child(3) .gridBlock {
+  left: -5vw;
+  top: 20vw;
+  width: 20vw;
+  height: 20vw;
+}
+@media only screen and (max-width: 580px) {
+  .gridLayer:nth-child(3) .gridBlock {
+    top: 30.278vw;
+    left: 0;
+    width: 26.389vw;
+    height: 26.389vw;
+  }
+}
+.gridLayer:nth-child(1) .gridBlock {
+  top: 17.5vw;
+  left: 17.5vw;
+  width: 30vw;
+  height: 30vw;
+}
+@media only screen and (max-width: 580px) {
+  .gridLayer:nth-child(1) .gridBlock {
+    top: 30.278vw;
+    left: 30.278vw;
+    width: 39.444vw;
+    height: 39.444vw;
+  }
+}
+.gridLayer:nth-child(5) {
+  z-index: 1;
+}
+.gridLayer:nth-child(5) .gridBlock {
+  top: 5vw;
+  left: 50vw;
+  width: 20vw;
+  height: 20vw;
+}
+@media only screen and (max-width: 580px) {
+  .gridLayer:nth-child(5) .gridBlock {
+    top: 23.889vw;
+    left: 73.889vw;
+    width: 15.278vw;
+    height: 15.278vw;
+  }
+}
+.gridLayer:nth-child(5) a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gridLayer:nth-child(5) svg {
+  width: 1.75vw;
+}
+@media only screen and (max-width: 580px) {
+  .gridLayer:nth-child(5) svg {
+    width: 4.722vw;
+  }
+}
+.gridLayer:nth-child(6) .gridBlock {
+  left: 50vw;
+  top: 27.5vw;
+  width: 20vw;
+  height: 20vw;
+}
+@media only screen and (max-width: 580px) {
+  .gridLayer:nth-child(6) .gridBlock {
+    top: 43.889vw;
+    left: 73.889vw;
+    width: 26.389vw;
+    height: 26.389vw;
+  }
+}
+.gridLayer:nth-child(7) .gridBlock {
+  left: 0vw;
+  top: 42.5vw;
+  width: 15vw;
+  height: 15vw;
+}
+@media only screen and (max-width: 580px) {
+  .gridLayer:nth-child(7) .gridBlock {
+    display: none;
+  }
+}
+.gridLayer:nth-child(8) .gridBlock {
+  bottom: -10vw;
+  left: 22.5vw;
+  width: 20vw;
+  height: 20vw;
+}
+@media only screen and (max-width: 580px) {
+  .gridLayer:nth-child(8) .gridBlock {
+    display: none;
+  }
+}
+.gridLayer:nth-child(9) .gridBlock {
+  bottom: 0;
+  left: 50vw;
+  width: 10vw;
+  height: 10vw;
+}
+@media only screen and (max-width: 580px) {
+  .gridLayer:nth-child(9) .gridBlock {
+    top: 73.889vw;
+    left: 58.889vw;
+    width: 15.278vw;
+    height: 15.278vw;
+  }
+}
+.gridBlock {
+  display: block;
+  position: absolute;
+}
+
+.header-section {
+  background: linear-gradient(to bottom, pink, white);
+  color: rgb(255,23,136);
+  display: flex;
+  font-size: 20vh;
+  justify-content: center;
+  align-items: center;
+  
+}
