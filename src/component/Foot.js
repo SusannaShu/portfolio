@@ -32,10 +32,11 @@ class Foot extends React.Component {
                         Contact Me
                     </Header>
                     <p>
-                        phonenumber:17308079166
+                        US mobile:360-202-2983
+                        Chinese Mobile:17308079166
                     </p>
                     <p>
-                        e-mail:1181456762@qq.com
+                        E-mail:susanna.xinshu@gmail.com
                     </p>
                 </Grid.Column>
             

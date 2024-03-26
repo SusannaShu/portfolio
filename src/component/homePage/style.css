@@ -128,10 +128,37 @@ body {
   ); */
 }
 
+@media only screen and (max-width: 1050px) {
+  .intro-background {
+    justify-content: right;
+    align-items: flex-start;
+    position: absolute;
+    bottom:-70px;
+    right:-100px
+  }
+}
+@media only screen and (max-width: 800px) {
+  .intro-background {
+    justify-content: right;
+    align-items: flex-start;
+    position: absolute;
+    bottom:-150px;
+    right:-100px
+  }
+}
+
 #pic1 {
   height: 80vh;
   bottom: 200px;
   z-index: 2;
+}
+
+@media (max-width: 1050px) {
+  #pic1 {
+    position: absolute;
+    left:100px;
+    bottom:80px;
+  }
 }
 
 #pic2 {
@@ -140,6 +167,20 @@ body {
   left: -20px;
   z-index: 1;
 }
+
+@media (max-width: 600px) {
+  #pic4 {
+  left: -10px;
+  }
+}
+
+@media(max-width: 1050px) {
+  #pic4 {
+    display: none;
+  }
+}
+
+
 
 #pic3 {
   height: 40vh;
@@ -175,13 +216,20 @@ body {
 
 .dot {
   position: absolute;
-
   width: 40px; /* Size of the dot */
   height: 40px; /* Size of the dot */
   border-radius: 50%; /* Makes it a circle */
   background-color: #d1ffbd; /* Color of the dot, change as needed */
   z-index: 3; /* Ensure it's on top of images but behind the intro background */
 }
+
+@media only screen and (max-width: 1050px) {
+  .dot{
+    display: none;
+  }
+}
+
+
 
 /* Example positions, adjust as needed */
 #dot1 {
@@ -218,7 +266,7 @@ body {
 /* Grid almost fully pulled from https://www.rino-pelle.com/ */
 .grid-container {
   width: 100vw;
-  height: 400vh;
+  height: 450vh;
   position: relative;
   background-image: linear-gradient(
     /* circle, */
@@ -228,6 +276,14 @@ body {
   );
   background-size: 60%;
   
+}
+
+@media only screen and (max-width: 1050px) {
+  .grid-container {
+    height: 400vh;
+    width:100vw
+    
+  }
 }
 .grid {
   top: 0;
@@ -375,14 +431,14 @@ body {
 .gridLayer:nth-child(8) .gridBlock {
   bottom: -10vw;
   left: 22.5vw;
-  width: 20vw;
+  width: 25vw;
   height: 20vw;
 }
-@media only screen and (max-width: 580px) {
+/* @media only screen and (max-width: 580px) {
   .gridLayer:nth-child(8) .gridBlock {
     display: none;
   }
-}
+} */
 .gridLayer:nth-child(9) .gridBlock {
   bottom: -5vw;
   left: 50vw;
@@ -403,12 +459,15 @@ body {
 }
 
 .header-section {
-  background: linear-gradient(to bottom, pink, white);
+  /* background: linear-gradient(to bottom, white, pink); */
   color: rgb(255,23,136);
   display: flex;
-  font-size: 12vh;
+  font-size: 8vh;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
+  margin-top:0;
   
 }
 
@@ -421,6 +480,7 @@ body {
   margin-top: 0;
   position: absolute;
   width: 50vw;
+  height:50vh;
   z-index: 2;
   left: 30vw;
   top:30vw
