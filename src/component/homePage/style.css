@@ -220,6 +220,13 @@ body {
   width: 100vw;
   height: 400vh;
   position: relative;
+  background-image: linear-gradient(
+    /* circle, */
+    pink,
+    rgb(255,23,136), 
+    transparent
+  );
+  background-size: 60%;
   
 }
 .grid {
@@ -230,11 +237,7 @@ body {
   height: 60vw;
   margin: 0 calc(100vw / 20 * 3);
   position: absolute;
-  background-image: radial-gradient(
-    circle,
-    rgb(255,23,136), 
-    transparent
-  );
+  
 }
 @media only screen and (max-width: 580px) {
   .grid {
@@ -420,6 +423,6 @@ body {
   width: 50vw;
   z-index: 2;
   left: 30vw;
-  top:10vw
+  top:30vw
 }
 
