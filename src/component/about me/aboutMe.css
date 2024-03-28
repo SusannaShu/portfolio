@@ -1,0 +1,88 @@
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 45px;
+}
+
+.page-container {
+  /* Assuming this wraps your entire page content including the footer */
+  display: flex;
+  flex: 1;
+  /* flex-direction: column; */
+  height: 120vh;
+  width: 100vw;
+  background-color: pink;
+
+}
+
+.left-content {
+  position: fixed;
+  width: 40%; /* Set width to 50% of the viewport */
+  height: 100vh;
+  left: 0;
+  top: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 20px; /* Add some padding around the content */
+  /* background-image: radial-gradient(
+    circle 30vh at center,
+    rgb(255, 23, 136),
+    transparent 100%
+  ); */
+color: white;
+  text-align: center;
+}
+
+.right-content {
+  padding: 40px;
+  margin-left: 40%; /* Push content to the right, adjust based on the width of .left-content */
+  width: 60%; /* Set the right content to take up the remaining 50% width */
+  overflow-y: auto;
+  color: white;
+  border-left:1px solid white ;
+
+  /* background-color: white; */
+}
+
+/* Adjustments for under 800px */
+@media only screen and (max-width: 800px) {
+  .content-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center; /* Align content to start */
+    align-items: center;
+    width: 100vw; /* Ensure full width */
+  }
+
+  .left-content {
+position: absolute; 
+width:100vw;
+height: 100vh;
+}
+
+  .right-content {
+    margin-left: 0; /* Remove the left margin since left content is hidden */
+    width: 100%; /* Use full width available */
+    padding: 60px;
+    
+    /* background: linear-gradient(pink, white); */
+    background-color: pink;
+}
+}
+
+#mypic{
+    width: 15vw;
+}
+
+#dcv{
+    text-decoration: underline;
+}
+
+#dcv:hover{
+    color:hotpink;
+}

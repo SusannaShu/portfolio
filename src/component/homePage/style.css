@@ -1,10 +1,14 @@
 body {
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .container {
   position: relative;
   overflow: hidden;
+  padding-top: 40px;
   height: 100vh;
   width: 100vw;
 }
@@ -114,7 +118,7 @@ body {
   display: flex;
   height: 100vh;
   width: 100vw;
-  background-image: url('https://res.cloudinary.com/sheyou/image/upload/v1711312709/Untitled_Artwork_2_25314340fe.png');
+  background-image: url('https://res.cloudinary.com/sheyou/image/upload/v1711553703/Untitled_Artwork_beecba3bd0.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60vw;
@@ -133,8 +137,8 @@ body {
     justify-content: right;
     align-items: flex-start;
     position: absolute;
-    bottom:-70px;
-    right:-50px
+    bottom: -70px;
+    right: -50px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -142,22 +146,22 @@ body {
     justify-content: right;
     align-items: flex-start;
     position: absolute;
-    bottom:-150px;
-    right:-10px
+    bottom: -120px;
+    right: -10px;
   }
 }
 
 #pic1 {
   height: 80vh;
-  bottom: 200px;
+  bottom: 100px;
   z-index: 2;
 }
 
 @media (max-width: 1050px) {
   #pic1 {
     position: absolute;
-    left:100px;
-    bottom:80px;
+    left: 100px;
+    bottom: 80px;
   }
 }
 
@@ -170,24 +174,22 @@ body {
 
 @media (max-width: 600px) {
   #pic4 {
-  left: -10px;
+    left: -10px;
   }
 }
 
-@media(max-width: 1050px) {
+@media (max-width: 1050px) {
   #pic4 {
     display: none;
   }
 }
-
-
 
 #pic3 {
   height: 40vh;
   z-index: 1;
   position: absolute;
   right: 150px;
-  top: 50px;
+  top: 70px;
 }
 
 #pic4 {
@@ -224,12 +226,10 @@ body {
 }
 
 @media only screen and (max-width: 1050px) {
-  .dot{
+  .dot {
     display: none;
   }
 }
-
-
 
 /* Example positions, adjust as needed */
 #dot1 {
@@ -269,28 +269,24 @@ body {
   height: 470vh;
   position: relative;
   background-image: linear-gradient(
-    /* circle, */
-    pink,
-    rgb(255,23,136), 
+    /* circle, */ pink,
+    rgb(255, 23, 136),
     transparent
   );
   background-size: 60%;
-  
 }
 
 @media only screen and (max-width: 1100px) {
   .grid-container {
     height: 450vh;
-    width:100vw
-    
+    width: 100vw;
   }
 }
 
 @media only screen and (max-width: 850px) {
   .grid-container {
     height: 410vh;
-    width:100vw
-    
+    width: 100vw;
   }
 }
 .grid {
@@ -301,14 +297,12 @@ body {
   width: 70vw;
   height: 60vw;
   margin: 0 calc(100vw / 20 * 3);
-  
 }
 @media only screen and (max-width: 580px) {
   .grid {
     margin: 0;
     width: 100vw;
     height: 89.444vw;
-    
   }
 }
 .gridBlock {
@@ -468,18 +462,17 @@ body {
 
 .header-section {
   /* background: linear-gradient(to bottom, white, pink); */
-  color: rgb(255,23,136);
+  color: rgb(255, 23, 136);
   display: flex;
   font-size: 8vh;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 2;
-  margin-top:0;
-  
+  margin-top: 0;
 }
 
-.content-section{
+.content-section {
   color: white;
   display: flex;
   font-size: 8vh;
@@ -488,9 +481,32 @@ body {
   margin-top: 0;
   position: absolute;
   width: 50vw;
-  height:50vh;
+  height: 50vh;
   z-index: 2;
   left: 30vw;
-  top:30vw
+  top: 30vw;
 }
 
+.page-center {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: radial-gradient(
+    circle 50vh at center,
+    rgb(255, 23, 136),
+    transparent 100%
+  );
+  /* Adjust the 'transparent 100%' to manage the gradient's fade effect */
+}
+
+.centered-text {
+  font-size: 30px; /* Example font size, adjust as needed */
+  color: white; /* Example text color, adjust as needed */
+}
+
+.centered-text:hover{
+  text-decoration: underline;
+}

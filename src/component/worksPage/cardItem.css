@@ -1,0 +1,41 @@
+.card-item .image-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    
+  }
+  
+  .card-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.5s ease;
+  }
+  
+  .card-item .overlay {
+    position: absolute;
+    bottom: 0;
+    color: #f1f1f1; /* White text color */
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: hotpink;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    /* Initially hidden */
+  }
+  
+  .card-item .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .card-item .image-container:hover img {
+    filter: brightness(0) invert(1);
+  }
+  
+  .card-item .text {
+    color: hotpink; /* Text color */
+    font-size: 16px; /* Text size */
+  }
+  

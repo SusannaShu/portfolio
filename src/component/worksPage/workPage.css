@@ -1,0 +1,27 @@
+.item-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+    gap: 20px; /* Adjust the gap between items as needed */
+    padding: 20px;
+    padding-top:50px;
+
+    margin-bottom: 50px;
+    background: linear-gradient(pink, white);
+  }
+  
+  /* Adjusts to two columns for medium-sized screens, e.g., tablets */
+  @media (max-width: 800px) {
+    .item-group {
+      grid-template-columns: repeat(2, 1fr);
+      padding-top:50px
+    }
+  }
+  
+  /* Adjusts to a single column for small screens, e.g., smartphones */
+  @media (max-width: 500px) {
+    .item-group {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+ 

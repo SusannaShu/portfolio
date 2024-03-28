@@ -1,0 +1,81 @@
+  #masthead {
+    position: absolute;
+    display: flex;
+    z-index: 999;
+  }
+  #masthead a {
+    padding: 1rem 2rem;
+  }
+  
+  .anchor-nav{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:pink ;
+    border:none;
+  
+  }
+  
+  .anchor{
+    color:white
+  }
+  
+  a {
+    color: var(--color-just-black)
+  }
+  
+  /* Nav.css */
+.menu-icon {
+    width:100vw;
+    padding-top:20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+    background-color:pink ;
+    border:none;
+    color:white;
+    display: none; /* Hide by default */
+  }
+  
+  .anchor-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 600px) {
+    .menu-icon {
+      display: block; /* Show menu icon */
+      /* cursor: pointer; */
+      position: absolute;
+      z-index: 10;
+      /* Additional styling */
+    }
+     
+    #masthead a {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+        text-align: center; /* Centers the text for stacked anchors */
+        
+      }
+  
+    .anchor-nav {
+      display: none; /* Hide full navigation */
+      flex-direction: column;
+      text-align: center; 
+    }
+  
+    .visible.anchor-nav {
+      display: flex; /* Show dropdown */
+      flex-direction: column; 
+      border-top:1px solid white ;
+
+      margin-top: 65px;
+      position: absolute;
+      z-index: 10;
+    }
+  }
+  

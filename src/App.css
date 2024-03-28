@@ -1,47 +1,113 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-/* .body {
-  background-image: url('https://i.loli.net/2020/11/07/g8icfndU6Z9pwJN.jpg');
-} */
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.kanit-thin {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.kanit-thin-italic {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 100;
+  font-style: italic;
 }
 
-.App-link {
-  color: #61dafb;
+.kanit-extralight {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.kanit-extralight-italic {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
+  font-style: italic;
 }
 
-.loli-bg {
-    background-image: url('https://i.loli.net/2020/11/07/NeH9du5v1igFkpf.jpg');
+.kanit-light {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 
+.kanit-light-italic {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kanit-regular {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-regular-italic {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.kanit-medium {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-medium-italic {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.kanit-semibold {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kanit-semibold-italic {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.kanit-bold {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-bold-italic {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.kanit-extrabold {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kanit-extrabold-italic {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.kanit-black {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.kanit-black-italic {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }

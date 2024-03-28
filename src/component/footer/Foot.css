@@ -1,0 +1,55 @@
+
+
+.footer-container {
+    width: 100%;
+    background-color: pink; /* Dark background for contrast */
+    color: white; /* Light text color for readability */
+    padding: 40px 0; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%; /* Set a max-width for content and center it */
+    max-width: 1200px; /* Adjust based on your design preferences */
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px; /* Space between the section title and content */
+  }
+
+  .footer-section a:hover {
+    color:hotpink
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+  }
+  
+  .footer-links a {
+    color: white; /* Ensure links are also white */
+    text-decoration: none; /* Remove underline from links */
+    margin: 5px 0; /* Add some space between links */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Add underline on hover for interactivity */
+  }
+  
+  @media (max-width: 600px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center; /* Center content on smaller screens */
+    }
+  
+    .footer-section {
+      margin: 10px 0; /* Add space between sections when stacked */
+    }
+  }
+  
