@@ -53,14 +53,15 @@ color: white;
 @media only screen and (max-width: 800px) {
   .content-container {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center; /* Align content to start */
     align-items: center;
     width: 100vw; /* Ensure full width */
   }
 
   .left-content {
-position: absolute; 
+position: relative; 
+top:15px;
 width:100vw;
 height: 100vh;
 }
