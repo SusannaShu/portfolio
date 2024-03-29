@@ -2,9 +2,6 @@ import React from 'react'
 import Nav from '../nav/nav.js'
 import Footer from '../footer/Foot.js'
 import './aboutMe.css'
-import { Link, withRouter } from 'react-router-dom'
-
-import { Icon, Sticky } from 'semantic-ui-react'
 
 class AboutMePage extends React.Component {
   constructor (props) {

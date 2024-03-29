@@ -5,6 +5,7 @@ import './workPage.css'
 import axios from 'axios'
 import Footer from '../footer/Foot.js'
 import Loading from '../loader/Loading.js'
+
 class WorksPage extends React.Component {
   constructor (props) {
     super(props)
@@ -45,7 +46,7 @@ class WorksPage extends React.Component {
       <div>
         <Nav />
 
-        <div class='item-group'>
+        <div className='item-group'>
           {this.state.items.map((item, index) => (
             <CardItem key={index} item={item} />
           ))}
