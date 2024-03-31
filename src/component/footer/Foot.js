@@ -41,7 +41,7 @@ const Footer = () => {
             <Link to='/Drawings'>Drawings</Link>
             <Link to='/About'>About Me</Link>
             <a
-              href='https://sheyousite.com'
+              href='https://sheyoufashion.com'
               target='_blank'
               rel='noopener noreferrer'
             >
