@@ -4,7 +4,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: 100%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  padding-top: 150px;
 }
 .bg {
   position: absolute;
