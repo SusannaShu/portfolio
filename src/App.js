@@ -7,6 +7,8 @@ import HomePage from './component/homePage/HomePage'
 import WorksPage from './component/worksPage/WorksPage'
 import DrawingsPage from './component/drawings/DrawingsPage'
 import AboutMePage from './component/about me/AboutMePage'
+import WorkDetail from './component/worksPage/WorkContent'
+import FashionShow from './component/worksPage/FashionShow'
 
 class App extends React.Component {
   render () {
@@ -15,16 +17,22 @@ class App extends React.Component {
         <Router>
           <Switch>
             <Route exact path='/'>
-              <HomePage/>
+              <HomePage />
             </Route>
+            <Route path='/work/:id'>
+              <WorkDetail />
+            </Route>
+            <Route path='/fashionshow'>
+              <FashionShow/>
+              </Route>
             <Route path='/Works'>
-              <WorksPage/>
+              <WorksPage />
             </Route>
             <Route path='/Drawings'>
-              <DrawingsPage/>
+              <DrawingsPage />
             </Route>
             <Route path='/About'>
-              <AboutMePage/>
+              <AboutMePage />
             </Route>
           </Switch>
         </Router>

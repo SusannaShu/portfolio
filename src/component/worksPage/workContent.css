@@ -1,0 +1,18 @@
+.gallery-container{
+  padding-top:60px ;
+}
+.gallery-item{
+  width: 100vw;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+.back-to-work {
+  position: fixed;
+  top: 20px; /* Adjust based on your needs */
+  left: 20px; /* Adjust based on your needs */
+  cursor: pointer;
+  z-index: 1000; /* Ensure it stays above other content */
+}
