@@ -39,7 +39,7 @@ class Nav extends Component {
     const menuItems = [
       { name: 'Home', path: '/', external: false },
       { name: 'Works', path: '/Works', external: false },
-      { name: 'Drawings', path: '/Drawings', external: false },
+      { name: 'Sketchbook', path: '/Drawings', external: false },
       { name: 'About', path: '/About', external: false },
       { name: 'SHEYOU', path: 'https://sheyoufashion.com', external: true }
     ]
