@@ -38,7 +38,7 @@ const Footer = () => {
         >
           <div className='footer-links'>
             <Link to='/Works'>Works</Link>
-            <Link to='/Drawings'>Drawings</Link>
+            <Link to='/Drawings'>Sketches</Link>
             <Link to='/About'>About Me</Link>
             <a
               href='https://sheyoufashion.com'
