@@ -27,11 +27,13 @@ class WorksPage extends React.Component {
     ).then(function (res) {
       if (res.status === 200) {
         console.log(res.data)
-        self.setState({ items: res.data, loading: false })
+        const displayItems = res.data.filter(item => item.display !== undefined && item.display !== null && item.display !== '');
+        const nonDisplayItems = res.data.filter(item => item.display === undefined || item.display === null || item.display === '');
+        const sortedItems = [...displayItems, ...nonDisplayItems];
+        self.setState({ items: sortedItems, loading: false });
       } else {
         alert('something went wrong :(')
-        this.setState({ loading: false }); // Also update loading state in case of error
-
+        self.setState({ loading: false }); // Also update loading state in case of error
       }
     })
   }
