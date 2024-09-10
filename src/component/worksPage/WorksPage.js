@@ -109,7 +109,7 @@ class WorksPage extends React.Component {
         <div className='work-tags' style={{
           display: 'flex',
           flexWrap: 'wrap',
-          paddingTop: '60px',
+          paddingTop: '80px',
           gap: '8px',
           backgroundColor: 'pink',
           justifyContent: 'center'
