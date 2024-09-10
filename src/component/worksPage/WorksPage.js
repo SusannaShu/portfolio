@@ -25,6 +25,7 @@ class WorksPage extends React.Component {
   }
 
   fetchData = async () => {
+    this.setState({ loading: true });
     try {
       const [portfoliosResponse, workTagsResponse] = await Promise.all([
         axios.get(
@@ -78,20 +79,28 @@ class WorksPage extends React.Component {
 
     this.setState({ selectedTags: newSelectedTags, loading: true });
 
-    try {
-      const queryString = newSelectedTags.map(tag => `tagName=${tag}`).join('&');
-      const response = await axios.get(`https://sheyou-backend.herokuapp.com/work-tags?${queryString}`);
-      
-      if (response.status === 200) {
-        const filteredItems = response.data.flatMap(tag => tag.portfolios);
-        this.setState({ items: filteredItems, loading: false });
-      } else {
-        throw new Error('Failed to fetch filtered data');
+    if (newSelectedTags.length === 0) {
+      // If no tags are selected, fetch all data
+      await this.fetchData();
+    } else {
+      try {
+        const queryString = newSelectedTags.map(tag => `tagName=${tag}`).join('&');
+        const response = await axios.get(`https://sheyou-backend.herokuapp.com/work-tags?${queryString}`);
+        
+        if (response.status === 200) {
+          const filteredItems = response.data.flatMap(tag => tag.portfolios);
+          // Remove duplicates based on item id
+          const uniqueFilteredItems = Array.from(new Set(filteredItems.map(item => item.id)))
+            .map(id => filteredItems.find(item => item.id === id));
+          this.setState({ items: uniqueFilteredItems, loading: false });
+        } else {
+          throw new Error('Failed to fetch filtered data');
+        }
+      } catch (error) {
+        console.error('Error fetching filtered data:', error);
+        alert('Something went wrong while filtering :(');
+        this.setState({ loading: false });
       }
-    } catch (error) {
-      console.error('Error fetching filtered data:', error);
-      alert('Something went wrong while filtering :(');
-      this.setState({ loading: false });
     }
   }
 
@@ -121,7 +130,7 @@ class WorksPage extends React.Component {
               color={selectedTags.includes(tag.tagName) ? 'pink' : null}
               onClick={() => this.handleTagClick(tag.tagName)}
             >
-              {selectedTags.includes(tag.tagName) && <Icon name='close' />}
+              {selectedTags.includes(tag.tagName) && <Icon name='close' style={{marginRight: '5px'}}/>}
               {tag.tagName}
             </Label>
           ))}
