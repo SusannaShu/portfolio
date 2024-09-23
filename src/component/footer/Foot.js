@@ -45,7 +45,7 @@ const Footer = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              SHEYOU
+              SUSU
             </a>
           </div>
         </div>

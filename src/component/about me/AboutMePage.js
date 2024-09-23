@@ -65,9 +65,9 @@ class AboutMePage extends React.Component {
               </p>
               <p>
                 In 2019, inspired by the principles of sharing and
-                sustainability that I grew up with, I founded SHEYOU, a fashion
+                sustainability that I grew up with, I founded SUSU, a fashion
                 sharing platform aimed at revolutionizing how we view and
-                consume fashion. SHEYOU is not just a business venture;
+                consume fashion. SUSU is not just a business venture;
                 it&apos;s a manifestation of my belief in a circular economy and
                 a testament to the potential of technology to foster community,
                 sustainability, and innovation in fashion. Through the platform,

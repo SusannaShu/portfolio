@@ -41,7 +41,7 @@ class Nav extends Component {
       { name: 'Works', path: '/Works', external: false },
       { name: 'Sketchbook', path: '/Drawings', external: false },
       { name: 'About', path: '/About', external: false },
-      { name: 'SHEYOU', path: 'https://sheyoufashion.com', external: true }
+      { name: 'SUSU', path: 'https://sheyoufashion.com', external: true }
     ]
 
     return (
