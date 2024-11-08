@@ -24,7 +24,7 @@ class AboutMePage extends React.Component {
               <a
                 target='_blank'
                 rel='noopener noreferrer'
-                href='https://drive.google.com/file/d/1Up7y6EwAD9C0OhALGJxy1u03j8Zs-dm2/view?usp=sharing'
+                href='https://drive.google.com/file/d/1p0xMnyVRq__11Wze9jk9HE05YNU3ChrW/view?usp=sharing'
                 id='dcv'
               >
                 <p>Download CV</p>
