@@ -17,22 +17,19 @@ class AboutMePage extends React.Component {
     return (
       <div>
         <Nav />
-
         <div className='page-container'>
           <div className='content-container'>
             <div className='left-content'>
               <a
                 target='_blank'
                 rel='noopener noreferrer'
-                href='https://drive.google.com/file/d/1p0xMnyVRq__11Wze9jk9HE05YNU3ChrW/view?usp=sharing'
+                href='https://drive.google.com/file/d/1tDGSoWj5kg74W93qeinzkC5q1Sy_yHv6/view?usp=sharing'
                 id='dcv'
               >
-                <p>Download CV</p>
+                <p>CV</p>
               </a>
               <br />
-              <p style={{color:'hotpink'}}>
-                Hi, This is Susanna
-              </p>
+              <p style={{ color: 'hotpink' }}>Hi, This is Susanna</p>
               {/* 
               <Icon name='heart' size='huge' color='pink'  /> */}
             </div>
@@ -43,56 +40,27 @@ class AboutMePage extends React.Component {
               </p>
               <br /> */}
               <p>
-                I&rsquo;m an aspiring innovator at the crossroads of fashion,
-                technology, and sustainability. My journey from the vibrant
-                landscapes of China to the dynamic streets of New York has been
-                one of constant exploration, learning, and creation. With a
-                passion deeply rooted in both the rich tapestry of traditional
-                Chinese culture and the boundless possibilities of modern
-                technology, I&apos;ve dedicated myself to reimagining how we
-                interact with the world around us.
+                I&rsquo;m a multidisciplinary creative technologist with a
+                passion for fashion. With a strong foundation in wearables and
+                software development, I&apos;ve worked on projects like
+                AI-powered smart glasses for language learning and a
+                next-generation fashion platform.
               </p>
               <br />
               <p>
-                My academic path began in the realm of electronic arts, where I
-                first ventured into the world of wearable technology in a
-                makerspace in Chengdu. This experience ignited a passion for
-                integrating technology with everyday life, leading me to Parsons
-                School of Design. Here, my focus has expanded into Design and
-                Technology, with a special interest in human-computer
-                interaction (HCI) and the ways we can make technology more
-                intuitive, ergonomic, and, importantly, sustainable.
+                My journey spans from creating arts to making engineering
+                prototypes—such as a fiber optic headdress and air mouse gloves.
+                As both a designer and a coder, I specialize in leveraging
+                Javascript, Python, and UX/UI frameworks to build intuitive,
+                impactful user experiences.
               </p>
               <p>
-                In 2019, inspired by the principles of sharing and
-                sustainability that I grew up with, I founded SHEYOU, a fashion
-                sharing platform aimed at revolutionizing how we view and
-                consume fashion. SHEYOU is not just a business venture;
-                it&apos;s a manifestation of my belief in a circular economy and
-                a testament to the potential of technology to foster community,
-                sustainability, and innovation in fashion. Through the platform,
-                I aspire to make the old ways cool again, advocating for shared
-                use over ownership, and environmental consciousness over
-                convenience.
-              </p>
-              <br />
-              <p>
-                My works, from the traditional &quot;Buyao&quot; inspired fiber
-                optic headdress to the practical air mouse glove and beyond,
-                reflect a dedication to blending aesthetics with utility,
-                tradition with innovation. Each project is a step towards a
-                future where technology enhances our lives seamlessly, where
-                fashion is sustainable, and where our interactions with the
-                digital world are as natural as they are meaningful.
-              </p>
-              <br />
-              <p>
-                As I continue to build upon my experiences, my aim is to
-                contribute positively to our global community&mdash;creating
-                wearable technology that alleviates the strain of modern life
-                and using coding to promote practices that honor our planet. I
-                believe that by bridging the gap between disparate worlds, we
-                can unlock new possibilities for a better future.
+                I also bring experience and connections from renowned
+                organizations like Chanel and Parsons School of Design, where I
+                honed my skills in business strategy, marketing research, and
+                problem-solving. From Chengdu to New York to Paris, I thrive in
+                fast-paced, innovative environments and aim to build the future
+                by merging fashion and technology.
               </p>
               <br />
               <p>Welcome to my journey.</p>
