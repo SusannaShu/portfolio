@@ -6,11 +6,20 @@ import './aboutMe.css'
 class AboutMePage extends React.Component {
   constructor (props) {
     super(props)
-    this.state = {}
+    this.state = {
+      cvUrl: ''
+    }
   }
 
   componentDidMount () {
     window.scrollTo(0, 0)
+    fetch('https://sheyou-backend.herokuapp.com/portfolios?id=1')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        this.setState({ cvUrl: data[0].description })
+      })
+      .catch(error => console.error('Error fetching CV URL:', error))
   }
 
   render () {
@@ -23,7 +32,7 @@ class AboutMePage extends React.Component {
               <a
                 target='_blank'
                 rel='noopener noreferrer'
-                href='https://drive.google.com/file/d/1tDGSoWj5kg74W93qeinzkC5q1Sy_yHv6/view?usp=sharing'
+                href={this.state.cvUrl}
                 id='dcv'
               >
                 <p>CV</p>

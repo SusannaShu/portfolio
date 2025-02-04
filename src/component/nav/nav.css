@@ -18,7 +18,29 @@
   }
   
   .anchor{
-    color:white
+    color: white;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .anchor:hover {
+    transform: scale(1.1);
+  }
+
+  .anchor::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(255,23,136);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  .anchor:hover::after {
+    width: 70%;
   }
   
   a {
@@ -34,9 +56,9 @@
     justify-content: center;
     text-align: center; 
     align-items: center;
-    background-color:pink ;
+    background-color: pink;
     border:none;
-    color:white;
+    color: white;
     display: none; /* Hide by default */
   }
   
@@ -71,8 +93,7 @@
     .visible.anchor-nav {
       display: flex; /* Show dropdown */
       flex-direction: column; 
-      border-top:1px solid white ;
-
+      border-top:1px solid white;
       margin-top: 65px;
       position: absolute;
       z-index: 10;

@@ -6,6 +6,7 @@ import axios from 'axios'
 import Foot from '../footer/Foot.js'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min.js'
+import { Label } from 'semantic-ui-react'
 // import { Button } from 'semantic-ui-react'
 import Loader from '../loader/Loading.js'
 
@@ -14,7 +15,8 @@ class HomePage extends React.Component {
     super(props)
     this.state = {
       pictures: [],
-      loading:true
+      workTags: [],
+      loading: true
     }
     this.renderGridBlocks = this.renderGridBlocks.bind(this)
     this.applyImageAnimations = this.applyImageAnimations.bind(this)
@@ -24,19 +26,24 @@ class HomePage extends React.Component {
     window.scrollTo(0, 0)
     const self = this
    
-
-    //get images from backend portfolio
-
-    axios('https://sheyou-backend.herokuapp.com/portfolios?id=1', {
-      method: 'get'
-    }).then(function (res) {
-      if (res.status === 200) {
-        // console.log(res.data[0].picture)
-        self.setState({ pictures: res.data[0].picture, loading:false })
-        // self.applyImageAnimations(res.data[0].picture)
+    // Fetch both pictures and tags
+    Promise.all([
+      axios.get('https://sheyou-backend.herokuapp.com/portfolios?id=1'),
+      axios.get('https://sheyou-backend.herokuapp.com/work-tags')
+    ]).then(([picturesRes, tagsRes]) => {
+      if (picturesRes.status === 200 && tagsRes.status === 200) {
+        self.setState({ 
+          pictures: picturesRes.data[0].picture, 
+          workTags: tagsRes.data,
+          loading: false 
+        })
       } else {
         alert('something went wrong :(')
       }
+    }).catch(error => {
+      console.error('Error fetching data:', error)
+      alert('Something went wrong while fetching data')
+      self.setState({ loading: false })
     })
   }
 
@@ -51,7 +58,7 @@ class HomePage extends React.Component {
     gsap.registerPlugin(ScrollTrigger)
     gsap.to('#pic1, #pic4', {
       scrollTrigger: {
-        trigger: '.intro-background',
+        trigger: '.intro-text',
         scrub: true // Makes the animation smooth and linked to scroll speed
       },
       y: 200,
@@ -60,7 +67,7 @@ class HomePage extends React.Component {
 
     gsap.to('#pic2', {
       scrollTrigger: {
-        trigger: '.intro-background',
+        trigger: '.intro-text',
         scrub: true
       },
       x: -200, // Faster horizontal movement, adjust as needed
@@ -68,7 +75,7 @@ class HomePage extends React.Component {
     })
     gsap.to('#pic3, #pic5', {
       scrollTrigger: {
-        trigger: '.intro-background',
+        trigger: '.intro-text',
         scrub: true
       },
       x: 200, // Faster horizontal movement, adjust as needed
@@ -76,7 +83,7 @@ class HomePage extends React.Component {
     })
     gsap.to('.dot', {
       scrollTrigger: {
-        trigger: '.intro-background',
+        trigger: '.intro-text',
         scrub: true
       },
       y: -200,
@@ -138,67 +145,84 @@ class HomePage extends React.Component {
       return <Loader/>
     }
 
+    // Create repeated tags to fill the background
+    const repeatedTags = [];
+    const repetitions = 3; // Repeat each tag multiple times for better coverage
+    
+    for (let i = 0; i < repetitions; i++) {
+      this.state.workTags.forEach((tag, index) => {
+        // Calculate random position and size
+        const x = Math.random() * 100; // Random x position (0-100%)
+        const y = Math.random() * 100; // Random y position (0-100%)
+        const isLongTag = tag.tagName.length > 15;
+        const isMediumTag = tag.tagName.length > 10;
+        const baseFontSize = isLongTag ? 1.2 : (isMediumTag ? 1.5 : 1.8);
+        const rotation = Math.random() * 60 - 30; // Random rotation between -30 and 30 degrees
+        const opacity = Math.random() * 0.3 + 0.1; // Random opacity between 0.1 and 0.4
+
+        repeatedTags.push({
+          ...tag,
+          x,
+          y,
+          fontSize: baseFontSize,
+          rotation,
+          opacity,
+          key: `${tag.id}-${i}`
+        });
+      });
+    }
+
     return (
       <div>
         <Nav />
-        <div>
-          <div className='container'>
-            <div className='intro-background'></div>
-
-            <div className='image-placement'>
-              <img
-              alt='pic'
-                id='pic1'
-                src='https://res.cloudinary.com/sheyou/image/upload/v1711315257/Subject_1e11a8f9c7.png'
-              />
-
-              <img
-              alt='pic'
-                id='pic2'
-                src='https://res.cloudinary.com/sheyou/image/upload/v1711315257/Subject_6_9e79b314de.png'
-              />
-              <img
-              alt='pic'
-                id='pic3'
-                src='https://res.cloudinary.com/sheyou/image/upload/v1711315255/Subject_2_180e15c2ac.png'
-              />
-              <img
-              alt='pic'
-                id='pic4'
-                src='https://res.cloudinary.com/sheyou/image/upload/v1711315255/Subject_7_316daf0518.png'
-              />
-              <img
-              alt='pic'
-                id='pic5'
-                src='https://res.cloudinary.com/sheyou/image/upload/v1711385747/Subject_9_8990677bea.png'
-              />
+        <div className='container'>
+          <div className='tag-cloud-container'>
+            <div className='tag-cloud'>
+              {repeatedTags.map((tag) => (
+                <Link 
+                  key={tag.key}
+                  to={`/Works?tag=${tag.tagName}`}
+                  style={{
+                    position: 'absolute',
+                    left: `${tag.x}%`,
+                    top: `${tag.y}%`,
+                    fontSize: `${tag.fontSize}vw`,
+                    opacity: tag.opacity,
+                    transform: `rotate(${tag.rotation}deg)`,
+                    color: 'rgb(255, 23, 136)',
+                    textDecoration: 'none',
+                    whiteSpace: 'nowrap',
+                    pointerEvents: 'auto',
+                    userSelect: 'none',
+                    zIndex: 1
+                  }}
+                >
+                  {tag.tagName}
+                </Link>
+              ))}
             </div>
-
-            <div className='dot' id='dot1'></div>
-            <div className='dot' id='dot2'></div>
-            <div className='dot' id='dot3'></div>
-            <div className='dot' id='dot4'></div>
-            <div className='dot' id='dot5'></div>
-            <div className='dot' id='dot6'></div>
           </div>
 
-          <div className='grid-container'>
-            <p className='content-section'>Welcome to my world!</p>
-            <div className='grid'>{this.renderGridBlocks()}</div>
-          </div>
+          <img
+            alt='profile'
+            id='pic4'
+            src='https://res.cloudinary.com/sheyou/image/upload/v1711315255/Subject_7_316daf0518.png'
+          />
+          <div className='intro-text'></div>
+        </div>
 
-          <div className='page-center'>
-            <Link to='/Works'>
-              {/* <Button className='centered-text' inverted size='large'>
-                Explore My Work!
-              </Button> */}
-              <p className='centered-text'>Click to Explore My Work!</p>
-            </Link>
-          </div>
+        <div className='grid-container'>
+          <p className='content-section'>Welcome to my world!</p>
+          <div className='grid'>{this.renderGridBlocks()}</div>
+        </div>
+
+        <div className='page-center'>
+          <Link to='/Works'>
+            <p className='centered-text'>Click to Explore My Work!</p>
+          </Link>
         </div>
 
         <Foot />
-        <div></div>
       </div>
     )
   }

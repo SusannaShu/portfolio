@@ -10,8 +10,8 @@ const Footer = () => {
         <div className='footer-section'>
           <p>Contact</p>
           <p>
-            US mobile: 360-202-2983
-            <br />
+            {/* US mobile: 360-202-2983
+            <br /> */}
             E-mail: susanna.xinshu@gmail.com
           </p>
           <p>
@@ -25,7 +25,7 @@ const Footer = () => {
             <a
               target='_blank'
               rel='noopener noreferrer'
-              href='https://www.linkedin.com/in/xin-shu-546195252/'
+              href='https://www.linkedin.com/in/susanna-xin-shu/'
             >
               <Icon name='linkedin' size='large' />
             </a>
@@ -40,13 +40,13 @@ const Footer = () => {
             <Link to='/Works'>Works</Link>
             <Link to='/Drawings'>Sketches</Link>
             <Link to='/About'>About Me</Link>
-            <a
+            {/* <a
               href='https://sheyoufashion.com'
               target='_blank'
               rel='noopener noreferrer'
             >
               SHEYOU
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

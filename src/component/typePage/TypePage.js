@@ -14,8 +14,8 @@ class TypePage extends React.Component {
   }
   render () {
 
-    gsap.to(".intro-background", {
-      scrollTrigger:".intro-background",
+    gsap.to(".intro-text", {
+      scrollTrigger:".intro-text",
       x: 20
     });
     

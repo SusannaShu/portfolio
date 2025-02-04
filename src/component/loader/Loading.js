@@ -16,7 +16,7 @@ class Loader extends React.Component {
     render () {
     return (
         <div className="loading-container">
-        <Icon name='heart' size='huge' color='pink' className="heart icon loading-icon"/>
+        <Icon loading name='spinner' size='big' color='pink' className="heart icon loading-icon"/>
       </div>
     )
   }
