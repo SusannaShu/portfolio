@@ -18,7 +18,7 @@ const Footer = () => {
             <a
               target='_blank'
               rel='noopener noreferrer'
-              href='https://www.instagram.com/susanna.xin.shu/'
+              href='https://www.instagram.com/susanna_xin_huang/'
             >
               <Icon name='instagram' size='large' />
             </a>
