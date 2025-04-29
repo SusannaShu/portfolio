@@ -29,6 +29,13 @@ const Footer = () => {
             >
               <Icon name='linkedin' size='large' />
             </a>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://github.com/SusannaShu'
+            >
+              <Icon name='github' size='large' />
+            </a>
           </p>
         </div>
 
